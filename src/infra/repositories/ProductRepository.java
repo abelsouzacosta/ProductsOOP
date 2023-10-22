@@ -1,8 +1,6 @@
 package infra.repositories;
 
-import domain.entities.ImportedProduct;
 import domain.entities.Product;
-import domain.exceptions.ArrayListEmptyException;
 import domain.exceptions.ArrayListFullException;
 
 import java.util.ArrayList;
