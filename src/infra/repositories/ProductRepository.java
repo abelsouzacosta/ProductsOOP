@@ -1,5 +1,6 @@
 package infra.repositories;
 
+import domain.entities.ImportedProduct;
 import domain.entities.Product;
 import domain.exceptions.ArrayListEmptyException;
 import domain.exceptions.ArrayListFullException;
@@ -21,6 +22,10 @@ public class ProductRepository {
     }
 
     private int getMax() { return this.max; }
+
+    public List<Product> list() {
+        return this.list;
+    }
 
     public void insert(Product product) throws ArrayListFullException {
         if (this.list.size() >= this.getMax()) throw new ArrayListFullException("Cannot insert: array is full");
