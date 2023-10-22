@@ -31,9 +31,4 @@ public class ProductRepository {
         if (this.list.size() >= this.getMax()) throw new ArrayListFullException("Cannot insert: array is full");
         this.list.add(product);
     }
-
-    public void remove(Product product) throws ArrayListEmptyException {
-        if (this.list.size() == 0) throw new ArrayListEmptyException("Cannot remove: array is empty");
-        this.list.remove(product);
-    }
 }
